@@ -1,0 +1,31 @@
+# Local .terraform directories
+.terraform/
+
+# Terraform lock files
+.terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform variable files
+# Keep example files in Git, but exclude actual tfvars
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan output
+*.tfplan
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
