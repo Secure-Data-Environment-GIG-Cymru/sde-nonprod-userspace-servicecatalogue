@@ -1,0 +1,7 @@
+project_id = "ndr-sde-nonprod-userproject1"
+
+project_name = "userproject1"
+
+user_id = "userid1"
+
+justification = "Standard analytical workload"
