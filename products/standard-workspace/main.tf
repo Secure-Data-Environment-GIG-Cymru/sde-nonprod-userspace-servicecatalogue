@@ -67,6 +67,7 @@ resource "google_workbench_instance" "standard_sde_workbench" {
     }
 
     disable_public_ip = true
+    private_ip_google_access = true
 
     network_interfaces {
       network = "projects/${var.project_id}/global/networks/${local.network_name}"
