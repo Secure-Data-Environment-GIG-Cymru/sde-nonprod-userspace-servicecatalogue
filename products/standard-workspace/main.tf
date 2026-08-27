@@ -28,7 +28,7 @@ locals {
   image_project = "cloud-notebooks-managed"
   image_family  = "workbench-instances"
 
-  boot_disk_size_gb = 100
+  boot_disk_size_gb = 150
   boot_disk_type    = "PD_BALANCED"
 
   idle_timeout_seconds = 3600

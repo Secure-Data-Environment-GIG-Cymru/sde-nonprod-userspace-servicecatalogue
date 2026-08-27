@@ -11,19 +11,24 @@ locals {
   region = "europe-west2"
   zone   = "europe-west2-a"
 
-  network_name = "sde-nonprod-${var.project_name}-network"
-  subnet_name  = "sde-nonprod-${var.project_name}-subnet"
+  project_short_name = trimprefix(var.project_id, "ndr-sde-nonprod-")
+
+  network_name = "sde-nonprod-${local.project_short_name}-network"
+  subnet_name  = "sde-nonprod-${local.project_short_name}-subnet"
+
+  #network_name = "sde-nonprod-${var.project_name}-network"
+  #subnet_name  = "sde-nonprod-${var.project_name}-subnet"
 
   service_account_email = "sde-nonprod-scdeployer-adn-sa@ndr-sde-nonprod-seedp.iam.gserviceaccount.com"
 
-  workbench_name = "${var.project_name}-standard-workbench-${var.user_id}"
+  workbench_name = "${local.project_short_name}-standard-workbench-${var.user_id}"
 
   machine_type = "n2-standard-4"
 
   image_project = "cloud-notebooks-managed"
   image_family  = "workbench-instances"
 
-  boot_disk_size_gb = 100
+  boot_disk_size_gb = 150
   boot_disk_type    = "PD_BALANCED"
 
   idle_timeout_seconds = 3600
