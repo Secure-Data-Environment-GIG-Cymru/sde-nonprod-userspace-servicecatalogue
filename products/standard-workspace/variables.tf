@@ -19,7 +19,7 @@ variable "user_id" {
 }
 
 variable "justification" {
-  description = "Reason for requesting the Workbench."
+  description = "Reason for requesting the Workbench. (please do not include punctuation such as commas in this field)"
   type        = string
 }
 
