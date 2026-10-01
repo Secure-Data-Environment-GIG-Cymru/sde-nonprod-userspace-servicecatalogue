@@ -19,7 +19,8 @@ locals {
   #network_name = "sde-nonprod-${var.project_name}-network"
   #subnet_name  = "sde-nonprod-${var.project_name}-subnet"
 
-  service_account_email = "sde-nonprod-scdeployer-adn-sa@ndr-sde-nonprod-seedp.iam.gserviceaccount.com"
+  #service_account_email = "sde-nonprod-scdeployer-adn-sa@ndr-sde-nonprod-seedp.iam.gserviceaccount.com"
+  service_account_email = "sde-nonprod-scdeployer-sa@${var.project_id}.iam.gserviceaccount.com"
 
   workbench_name = "${local.project_short_name}-standard-workbench-${var.user_id}"
 
