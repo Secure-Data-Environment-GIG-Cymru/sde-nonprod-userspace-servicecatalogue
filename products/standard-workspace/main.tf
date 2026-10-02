@@ -23,6 +23,7 @@ locals {
   service_account_email = "sde-nonprod-scdeployer-sa@${var.project_id}.iam.gserviceaccount.com"
 
   workbench_name = "${local.project_short_name}-standard-workbench-${var.user_id}"
+  #workbench_name = "${local.project_short_name}-standard-workbench-${var.user_id}-${var.deployment_name}"
 
   machine_type = "n2-standard-4"
 

@@ -23,3 +23,7 @@ variable "justification" {
   type        = string
 }
 
+#variable "deployment_name" {
+#  description = "Unique name for this Workbench deployment."
+#  type        = string
+#}
